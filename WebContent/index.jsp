@@ -4,19 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<title>Vinheria Agnello</title>
 </head>
 <body>
-
 	<jsp:include page="navbar.jsp"></jsp:include>
-
-
-	<%!
-		String variavel = "teste";
-	%>
-	
-
-	<h1> <%= variavel %> </h1>
-
+	<jsp:include page="footer.jsp"></jsp:include>
 </body>
-</html>

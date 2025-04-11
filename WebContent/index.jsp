@@ -8,15 +8,21 @@
 </head>
 <body>
 
-	<jsp:include page="navbar.jsp"></jsp:include>
 
-
-	<%!
-		String variavel = "teste";
-	%>
+	<jsp:include page="header.jsp"></jsp:include>
 	
 
-	<h1> <%= variavel %> </h1>
+	<jsp:include page="navbar.jsp"></jsp:include>
+	
+	
+	
+
+
+	
+	
+	
+
+
 
 </body>
 </html>

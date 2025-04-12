@@ -17,7 +17,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ECE4DC; border: none;">
                 <li><a class="dropdown-item" href="#">Comprar</a></li>
                 <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                <li><a class="dropdown-item" href="#">Configuraï¿½ï¿½es</a></li>
+                <li><a class="dropdown-item" href="#">Configurações</a></li>
             </ul>
         </div>
     </div>

@@ -20,5 +20,6 @@ pageEncoding="UTF-8"%>
     <jsp:include page="header.jsp"></jsp:include>
     <jsp:include page="resumo.jsp"></jsp:include>
     <jsp:include page="card.jsp"></jsp:include>
+    <jsp:include page="footer.jsp"></jsp:include>
   </body>
 </html>

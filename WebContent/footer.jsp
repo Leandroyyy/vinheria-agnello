@@ -2,7 +2,7 @@
     String title = "Vinheria Agnello";
 %>
 
-<footer class="navbar navbar-expand-lg" style="background-color: #512326; color: #E8E1D7; padding: 20px 0; position: fixed; bottom: 0; width: 100%;">
+<footer class="navbar navbar-expand-lg" style="background-color: #512326; color: #E8E1D7; padding: 20px 0; bottom: 0; width: 100%;">
     <div class="container">
         <div class="row w-100">
             <!-- Título -->

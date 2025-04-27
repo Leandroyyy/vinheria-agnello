@@ -27,10 +27,7 @@ public class ContactServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
     	System.out.println("Iniciado servlet");
-    	AwsBasicCredentials awsCreds = AwsBasicCredentials.create(
-                "KEY",    // ← Substitua aqui
-                "SECRET"     // ← Substitua aqui
-            );
+    	AwsBasicCredentials awsCreds = null;
 
         dynamoDb = DynamoDbClient.builder()
                 .region(Region.SA_EAST_1) // ou outra região se sua tabela estiver em outro lugar

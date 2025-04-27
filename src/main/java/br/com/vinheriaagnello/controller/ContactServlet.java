@@ -18,7 +18,7 @@ import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.PutItemRequest;
 
-@WebServlet("/Contact")
+@WebServlet("/")
 public class ContactServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 

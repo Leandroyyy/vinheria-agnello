@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
+import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.PutItemRequest;
 
@@ -18,16 +22,21 @@ import software.amazon.awssdk.services.dynamodb.model.PutItemRequest;
 public class ContactServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
-  // private DynamoDbClient dynamoDb;
+  private DynamoDbClient dynamoDb;
 
   @Override
   public void init() throws ServletException {
     System.out.println("Iniciado servlet");
+    AwsBasicCredentials awsCreds = AwsBasicCredentials.create(
+    	    "AKIA5FTY6LUL4B3GV7PI",
+    	    "05I7deH3Ynlw3mknmNTI3WqvC9fGblrEZ0mLn4UT"
+    	);
 
-    // dynamoDb = DynamoDbClient.builder()
-    // .region(Region.SA_EAST_1) // ou outra região se sua tabela estiver em outro
-    // lugar
-    // .build();
+	dynamoDb = DynamoDbClient.builder()
+	    .region(Region.SA_EAST_1)
+	    .credentialsProvider(StaticCredentialsProvider.create(awsCreds))
+	    .build();
+
   }
 
   @Override

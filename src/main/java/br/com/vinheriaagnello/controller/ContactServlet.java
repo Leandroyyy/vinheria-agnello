@@ -28,8 +28,8 @@ public class ContactServlet extends HttpServlet {
     public void init() throws ServletException {
     	System.out.println("Iniciado servlet");
     	AwsBasicCredentials awsCreds = AwsBasicCredentials.create(
-                "AKIA5FTY6LUL4B3GV7PI",    // ← Substitua aqui
-                "05I7deH3Ynlw3mknmNTI3WqvC9fGblrEZ0mLn4UT"     // ← Substitua aqui
+                "KEY",    // ← Substitua aqui
+                "SECRET"     // ← Substitua aqui
             );
 
         dynamoDb = DynamoDbClient.builder()

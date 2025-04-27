@@ -62,7 +62,7 @@ public class ContactServlet extends HttpServlet {
         .build();
 
     try {
-      // dynamoDb.putItem(putReq);
+      dynamoDb.putItem(putReq);
       response.setContentType("text/html");
       response.getWriter().println("<h3>Mensagem enviada com sucesso!</h3>");
     } catch (Exception e) {

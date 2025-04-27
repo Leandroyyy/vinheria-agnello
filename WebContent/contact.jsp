@@ -3,7 +3,7 @@
 <div class="container my-5">
     <div class="text-white p-4 rounded-3 shadow" style="background-color: #512326">
         <h2 class="text-center mb-4">Fale Conosco</h2>
-        <form action="sendContact" method="post">
+        <form action="Contact" method="post">
             <div class="mb-3">
                 <label for="name" class="form-label">Nome</label>
                 <input type="text" class="form-control rounded-3" id="name" name="name" placeholder="Seu nome completo" required>

@@ -11,10 +11,4 @@
         <servlet-class>br.com.vinheriaagnello.controller.ContactServlet</servlet-class>
     </servlet>
 
-    <!-- Mapeamento da URL -->
-    <servlet-mapping>
-        <servlet-name>ContactServlet</servlet-name>
-        <url-pattern>/sendContact</url-pattern>
-    </servlet-mapping>
-
 </web-app>

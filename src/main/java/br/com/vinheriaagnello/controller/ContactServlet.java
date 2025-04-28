@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
+import software.amazon.awssdk.http.urlconnection.UrlConnectionHttpClient;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -27,14 +28,10 @@ public class ContactServlet extends HttpServlet {
   @Override
   public void init() throws ServletException {
     System.out.println("Iniciado servlet");
-    AwsBasicCredentials awsCreds = AwsBasicCredentials.create(
-    	    "AKIA5FTY6LUL4B3GV7PI",
-    	    "05I7deH3Ynlw3mknmNTI3WqvC9fGblrEZ0mLn4UT"
-    	);
 
 	dynamoDb = DynamoDbClient.builder()
 	    .region(Region.SA_EAST_1)
-	    .credentialsProvider(StaticCredentialsProvider.create(awsCreds))
+	    .httpClientBuilder(UrlConnectionHttpClient.builder())
 	    .build();
 
   }

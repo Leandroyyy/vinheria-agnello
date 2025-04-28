@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src/main/java"/>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0 (2)">
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0">
 		<attributes>
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/apache-client-2.31.21.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/auth-2.31.21.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aws-core-2.31.21.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dynamodb-2.31.21.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jackson-databind-2.18.3.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/protocol-core-2.31.21.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/regions-2.31.21.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/sdk-core-2.31.21.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/slf4j-api-2.0.17.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/url-connection-client-2.31.30.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/utils-2.31.21.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/http-auth-aws-2.31.30.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/identity-spi-2.21.13.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/http-client-spi-2.31.30.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/retries-2.26.11.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/retries-spi-2.31.30.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aws-credentials-jvm-1.4.15.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/auth-2.31.30.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/profiles-2.1.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/endpoints-spi-2.31.30.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/http-auth-spi-2.21.5.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
